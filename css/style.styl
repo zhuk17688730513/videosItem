@@ -1,0 +1,489 @@
+@import './fn.styl'
+
+
+#app
+	position relative
+	max-width 750px
+	margin 0 auto
+	overflow hidden
+	
+
+
+.PublicHeader
+	position relative
+	width 100%
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	text-align center
+	heightL(.88rem)
+	padding 0 4%
+	overflow hidden
+	margin-bottom .3rem
+	&.h2
+		h1
+			float none
+			text-align center
+			.back
+				position absolute
+				top 0
+				left 0
+				width .40rem
+				height .88rem
+				background url("../img/76e8a_10_21_38.png") center center no-repeat
+				background-size .21rem .38rem
+	&.h3
+		h1
+			text-align left			
+				
+	h1
+		position relative
+		width 100%
+		font-size .48rem
+		color #2a3041
+	.sch
+		position absolute
+		right 3%
+		top 50%
+		height 100%
+		width .36rem
+		transform translateY(-50%)
+		background url("../img/e87a8_0_36_36.png") center center no-repeat
+		background-size .36rem
+		img
+			width 100%
+			vertical-align top	
+			
+.banner
+	position relative
+	width 6.86rem
+	height 3.84rem
+	border-radius .05rem
+	overflow hidden
+	box-shadow 0 .16rem .36rem rgba(#5e64d7,.38)
+	margin 0 auto .50rem
+	&.ban2
+		height 3.12rem
+		box-shadow none
+		
+	img
+		width 100%
+		min-height 100%
+	.swiper-pagination
+		text-align right
+		bottom .30rem !important
+		padding-right .30rem
+		span
+			width .24rem
+			height .06rem
+			border-radius .30rem
+			background #cacaca
+			opacity .6
+			&.swiper-pagination-bullet-active
+				background #6872ff
+				opacity 1
+				
+.navs
+	margin-bottom .1rem
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		li
+			width 25%
+			text-align center
+			margin-bottom .3rem
+			.pic
+				width 100%
+				height .8rem
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				align-items center
+				justify-content center
+				img
+					max-width  .7rem
+					max-height .7rem
+					vertical-align middle
+			span
+				font-size .28rem
+				color #666b84
+				line-height 1.6
+				display block
+				text-hide()
+				
+.public-title
+	width 100%
+	// padding 0 4%
+	clear both
+	margin-bottom .30rem
+	h2
+		font-size .38rem
+		color #2a3041
+		line-height .38rem
+		a
+			font-weight normal
+			float right
+			font-size .26rem
+			color #6068ff
+			// margin-right .25rem
+			
+.video-list
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		li
+			width 48%
+			margin-bottom .28rem
+			.pic
+				width 100%
+				height 1.93rem
+				overflow hidden
+				border-radius .08rem
+				margin-bottom .1rem
+				img
+					public-img()
+			p
+				line-height 1.4
+				font-size .28rem
+				color #2a3041
+				text-hide()
+			span
+				font-size .21rem
+				color #c1c3ce
+				line-height 1.4
+				display block
+				text-hide()
+
+.hotVideo
+	width 100%
+	padding 0 3%
+					
+.publicFooter
+	position fixed
+	z-index 10
+	bottom 0
+	left 0
+	width 100%
+	height 1.11rem
+	background #fff
+	border-top 1px solid #cdcdcd
+	ul
+		li
+			width 25%
+			height 1.11rem
+			text-align center
+			a
+				width 100%
+				height 100%
+				display block
+				font-size .2rem
+				color #c1c3ce
+				line-height 1.4
+				text-hide()
+				padding-top .7rem
+				&.router-link-active
+					color #000
+					&.a1
+						background url("../img/d0a97_3_48_51.png") center .15rem no-repeat
+						background-size .48rem .51rem
+					&.a2
+						background url("../img/1087f_4_55_51.png") center .15rem no-repeat
+						background-size .55rem .51rem
+					&.a3
+						background url("../img/d23de_5_47_47.png") center .2rem no-repeat
+						background-size .47rem .47rem
+					&.a4
+						background url("../img/5df9f_6_44_51.png") center .15rem no-repeat
+						background-size .44rem .51rem
+				&.a1
+					background url("../img/6c0d6_1_47_44.png") center .15rem no-repeat
+					background-size .47rem .44rem
+				&.a2
+					background url("../img/98a77_0_42_44.png") center .15rem no-repeat
+					background-size .42rem .44rem
+				&.a3
+					background url("../img/e43b5_1_45_40.png") center .2rem no-repeat
+					background-size .45rem .40rem
+				&.a4
+					background url("../img/a04ad_2_38_44.png") center .15rem no-repeat
+					background-size .38rem .44rem
+					
+.null
+	height 1.11rem
+	clear both
+	
+.publicCenter
+	width 750px
+	left 50%
+	margin-left -375px
+	
+.sech
+	width 6.86rem
+	height .60rem
+	border-radius .08rem
+	overflow hidden
+	background #f1f0f7
+	margin 0 auto .40rem
+	
+	form
+		width 100%
+		height 100%
+		input
+			width 100%
+			height 100%
+			background none
+			border none
+			font-size .26rem
+			padding-left .65rem
+			background url("../img/1744c_7_28_28.png") .20rem center no-repeat
+			background-size .28rem
+			&::-webkit-input-placeholder
+				color #656c8b
+
+.mav
+	width 6.86rem
+	margin 0 auto
+	margin-bottom .1rem
+	overflow hidden
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		flex-wrap wrap
+		justify-content space-between
+		li
+			width 48%
+			height 1.20rem
+			border-radius .05rem
+			overflow hidden
+			margin-bottom .30rem
+			float none
+			&.li1
+				background url("../img/8af43_1_328_120.jpg") no-repeat
+				background-size 100%
+			&.li2
+				background url("../img/e534c_2_328_120.jpg") no-repeat
+				background-size 100%
+			&.li3
+				background url("../img/fd145_3_328_120.jpg") no-repeat
+				background-size 100%
+			&.li4
+				background url("../img/092c8_4_328_120.jpg") no-repeat
+				background-size 100%
+			a
+				width 100%
+				height 100%
+				display block
+				color #fff
+				letter-spacing 2px
+				line-height 1.4
+				padding .10rem 1rem .10rem .20rem
+				b
+					font-size .38rem
+					display block
+					text-hide()
+					font-weight normal
+				p
+					font-size .26rem
+					text-hide()
+
+.collects
+	padding 0 3%
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		li
+			width 48%
+			margin-bottom .2rem
+			.pic
+				width 100%
+				height 1.93rem
+				margin-bottom .1rem
+				overflow hidden
+				border-radius .08rem
+				img
+					public-img()
+			p
+				line-height 1.4
+				font-size .28rem
+				color #2a3041
+				text-hide()
+			span
+				font-size .21rem
+				color #c1c3ce
+				line-height 1.4
+				display block
+				text-hide()
+
+.modify
+	padding .25rem 4%
+	text-align right
+	margin-bottom .30rem
+	span
+		display inline-block
+		width .36rem
+		height .36rem
+		background url("../img/6bddc_6_36_36.png") no-repeat
+		background-size 100%
+
+.my
+	padding 0 3%
+	
+.user-box
+	width 100%
+	display -webkit-flex
+	display -moz-flex
+	display -ms-flex
+	display -o-flex
+	display flex
+	justify-content space-between
+	align-items center
+	.left
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		.pic
+			width 1.3rem
+			height 1.3rem
+			border-radius 50%
+			overflow hidden
+			img
+				public-img()
+		.text
+			margin-left .35rem	
+			strong
+				font-size .46rem
+				color #2a3041
+				line-height 1.4
+				text-hide()
+				display block
+				margin-bottom .10rem
+				font-weight normal
+			p
+				font-size .28rem
+				color #757b99
+				line-height 1.4
+				text-hide()
+	.hy
+		heightL(.70rem)
+		border-radius .40rem 0 0 .40rem
+		overflow hidden
+		text-align center
+		font-size .28rem
+		color #fff
+		padding 0 .20rem 0 .25rem
+		backgroundL(#95a5ff,#6068ff,top)
+		margin-top .15rem
+
+.watch-box
+	width 100%
+	clear both
+	padding-top .40rem
+	line-height 1.4
+	font-size .28rem
+	color #757b99
+	margin-bottom .7rem
+	strong
+		color #000
+		font-size .36rem
+
+.history-list
+	overflow-x scroll
+	-webkit-overflow-scrolling touch
+	margin-bottom .5rem
+	&::-webkit-scrollbar
+		display none
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		margin-left -.3rem
+		li
+			width 2.46rem
+			margin-left .3rem
+			flex-shrink 0
+			a
+				width 100%
+				height 1.44rem
+				border-radius .12rem
+				margin-bottom .1rem
+				overflow hidden
+				display block
+				img
+					public-img()
+			p
+				font-size .26rem
+				color #2a3041
+				line-height 1.4
+				text-hide()
+				text-align center
+
+.features-box
+	padding .5rem 0 1rem
+	ul
+		width 100%
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		li
+			flex-grow 1
+			text-align center
+			i
+				width 100%
+				height .61rem
+				text-align center
+				display -webkit-flex
+				display -moz-flex
+				display -ms-flex
+				display -o-flex
+				display flex
+				justify-content center
+				align-items center
+				img
+					max-width .61rem
+					max-height .54rem
+			p
+				font-size .28rem
+				color #666b84
+				line-height 1.4
+				text-hide()
+
+
+@media screen and (max-width:750px)
+
+	.publicCenter
+		width 100%
+		left 0
+		margin-left 0
